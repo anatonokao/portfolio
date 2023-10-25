@@ -1,0 +1,159 @@
+.container {
+    border-radius: 20px;
+    border: 1px solid #FFF;
+    padding: 11px 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+
+.chooseLang {
+    font-family: IBM Plex Sans Devanagari, sans-serif;
+    text-transform: uppercase;
+    /*font-weight: 700;*/
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.ru,
+.en {
+    font-family: IBM Plex Sans Devanagari, sans-serif;
+    text-transform: uppercase;
+    transition: all .3s ease;
+    color: #969696;
+    position: relative;
+}
+
+.en {
+    font-size: 17px;
+}
+
+
+
+.en:before,
+.ru:before,
+.en:after,
+.ru:after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    transition: all .3s ease;
+}
+
+.en:before,
+.ru:before {
+    top: 0;
+    left: 0;
+    right: 100%;
+    background-color: #9294ff;
+}
+
+.en:after,
+.ru:after {
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: #9294ff;
+}
+
+.en:hover.en:before,
+.ru:hover.ru:before{
+    animation: .3s btnBefore linear;
+}
+
+
+.en:hover.en:after,
+.ru:hover.ru:after {
+    animation: .3s btnAfter linear;
+}
+
+@keyframes btnBefore {
+    0%{
+        left: 0;
+        right: 100%;
+    }
+    33% {
+        left: 25%;
+        right: 50%;
+    }
+    66%{
+        left: 50%;
+        right: 25%;
+    }
+    100%{
+        left: 100%;
+        right: 0;
+    }
+}
+
+@keyframes btnAfter {
+    0%{
+        left: 100%;
+        right: 0;
+    }
+    33% {
+        left: 50%;
+        right: 25%;
+    }
+    66%{
+        left: 25%;
+        right: 50%;
+    }
+    100%{
+        left: 0;
+        right: 100%;
+    }
+}
+
+
+.btn:hover {
+    color: #ffffff;
+}
+
+.arrows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrowTop {
+    animation: 1s arrowTop infinite;
+}
+
+.arrowBottom {
+    animation: 1s arrowBottom infinite;
+}
+
+@keyframes arrowTop {
+    from {
+        transform: translateY(15%);
+    }
+    50% {
+        transform: translateY(0%);
+
+    }
+    to {
+        transform: translateY(15%);
+
+    }
+}
+
+@keyframes arrowBottom {
+    from {
+        transform: translateY(-15%);
+
+    }
+
+    50% {
+        transform: translateY(0);
+
+    }
+
+    to {
+        transform: translateY(-15%);
+    }
+}
