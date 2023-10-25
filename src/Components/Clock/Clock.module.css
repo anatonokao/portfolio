@@ -1,0 +1,26 @@
+.clock {
+    display: flex;
+    justify-content: center;
+    font-family: Inter, cursive;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 233.023%;
+    letter-spacing: .2px;
+    padding: 10px;
+}
+
+.separator {
+    animation: 1500ms blink infinite;
+}
+
+@keyframes blink {
+    from {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,188 @@
+.helloText {
+    text-transform: uppercase;
+    font-family: IBM Plex Sans, sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 6.6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.h {
+    opacity: 0;
+    animation: 2s e linear forwards;
+
+}
+
+.e {
+    opacity: 0;
+    animation: 2s e linear forwards .5s;
+}
+
+.l {
+    opacity: 0;
+    animation: 2s l linear forwards;
+}
+
+.l2 {
+    opacity: 0;
+    animation: 2s l2 linear forwards .5s;
+}
+
+.o {
+    opacity: 0;
+    animation: 1s o linear forwards 1s;
+}
+
+@keyframes h {
+    0%{
+        opacity: 0;
+    }
+    10% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 5%;
+    }
+    40% {
+        opacity: 100%;
+    }
+    45% {
+        opacity: 10%;
+    }
+    65% {
+        opacity: 5%;
+    }
+    70% {
+        opacity: 100%;
+    }
+    80% {
+        opacity: 10%;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes e {
+    0%{
+        opacity: 0;
+    }
+    10% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 5%;
+    }
+    45% {
+        opacity: 100%;
+    }
+    47% {
+        opacity: 10%;
+    }
+    50% {
+        opacity: 5%;
+    }
+    70% {
+        opacity: 100%;
+    }
+    80% {
+        opacity: 10%;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes l {
+    0%{
+        opacity: 0;
+    }
+    10% {
+        opacity: 30%;
+    }
+    40% {
+        opacity: 5%;
+    }
+    45% {
+        opacity: 60%;
+    }
+    47% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 5%;
+    }
+    70% {
+        opacity: 70%;
+    }
+    80% {
+        opacity: 10%;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes l2 {
+    0%{
+        opacity: 0;
+    }
+    10% {
+        opacity: 100%;
+    }
+    40% {
+        opacity: 60%;
+    }
+    45% {
+        opacity: 2%;
+    }
+    47% {
+        opacity: 45%;
+    }
+    50% {
+        opacity: 5%;
+    }
+    70% {
+        opacity: 100%;
+    }
+    80% {
+        opacity: 45%;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes o {
+    0%{
+        opacity: 0;
+    }
+    10% {
+        opacity: 75%;
+    }
+    40% {
+        opacity: 50%;
+    }
+    45% {
+        opacity: 80%;
+    }
+    47% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 70%;
+    }
+    80% {
+        opacity: 5%;
+    }
+    100% {
+        opacity: 1;
+    }
+}
